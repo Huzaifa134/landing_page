@@ -1,24 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-
+import "@polkadot-cloud/core/accent/polkadot-relay.css";
+import "@polkadot-cloud/core/theme/cloud/index.css";
+import Page from './page/Page.component.jsx';
 function App() {
   return (
+    <div className='theme-polkadot-relay theme-light '>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Page/>
+    
     </div>
+  </div>
   );
 }
 
