@@ -16,7 +16,7 @@ export default function RowRadioButtonsGroup() {
         row
         aria-labelledby="demo-row-radio-buttons-group-label"
         name="row-radio-buttons-group"
-        className='ml-4 flex flex-wrap'
+        className='ml-4 mb-4 flex flex-wrap'
       >
         <div className='flex justify-center flex-wrap items-center'>
         <div className='mr-3'>Interaction Type</div>
@@ -27,7 +27,7 @@ export default function RowRadioButtonsGroup() {
         </div>
         </RadioGroup>
 
-      <MultipleSelect placeholder="Pallets / RPC"/>
+      <MultipleSelect placeholder="Pallets / RPC" />
       <MultipleSelect placeholder="Callables"/>
 
       <div className='flex items-center flex-wrap gap-y-5'>

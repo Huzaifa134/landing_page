@@ -22,9 +22,9 @@ export default function EventsComponent() {
   };
 
   return (
-    <div><h1 className='w-[500px] flex justify-centera items-center mb-4 font-bold text-3xl'style={{}}>Events<button><IconEraserVariant className='ml-96 mb-0 h-6 w-6'/></button></h1>
+    <div><h1 className='ml-4 lg:w-[100%] md:w-[100%] sm:w-[100%] w-[500px] flex justify-centera items-center mb-4 font-bold text-3xl'style={{margin:"0 auto"}}>Events<button><IconEraserVariant className='sm:ml-96 sm:mb-0 sm:h-6 sm:w-6 ml-[280px] '/></button></h1>
     
-    <div className="w-[500px] bg-white overflow-y-auto max-h-60 rounded" style={scrollBarStyle}>
+    <div className="lg:w-[100%] md:w-[100%] sm:w-[100%] w-[430px] bg-white overflow-y-auto max-h-60 rounded" style={scrollBarStyle}>
       <ul>
         {events.map((event, index) => (
           <li key={index} className=" px-4 py-2 hover:bg-gray-100 cursor-pointer">

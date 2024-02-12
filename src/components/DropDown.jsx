@@ -13,9 +13,9 @@ export default function SelectLabels({placeholder}) {
   };
 
   return (
-    <div>
+    <div className='mb-5'>
           
-          <FormControl sx={{ m: 1, minWidth: "99%" }} >
+          <FormControl sx={{ m: 0, minWidth: "99%" }} >
         <Select
           value={age}
           onChange={handleChange}

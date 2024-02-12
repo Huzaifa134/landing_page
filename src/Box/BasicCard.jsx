@@ -17,7 +17,7 @@ const bull = (
 
 export default function BasicCard() {
   return (
-    <div className="flex gap-10 justify-center flex-wrap">
+    <div className="flex gap-10 justify-center flex-wrap sm:w-[100%]">
       <Card sx={{ minWidth: 300 }} style={{ height: "200px" }}>
         <CardContent className="ml-4">
           {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
