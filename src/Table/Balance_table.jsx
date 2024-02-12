@@ -78,7 +78,7 @@ export default function CustomizedTables() {
                   </p>
                   </div>
                   <div style={{ width: '50%' }}>
-                    <IconButton color="primary" aria-label="contact icon" style={{ marginLeft: '50%' }}>
+                    <IconButton  color="primary" aria-label="contact icon" style={{ marginLeft: '50%' }}>
                       <IconContacts />
                     </IconButton>
                   </div>

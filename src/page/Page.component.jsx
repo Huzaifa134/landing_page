@@ -40,7 +40,7 @@ const Page = () => {
         <div className="flex justify-center items-center gap-x-5">
           <p>
             create an account with Polkadot-JS Extension{" "}
-            <span className="text-cyan-500">(chrome , Firefix)</span>
+            <span className="text-[#d33079]">(chrome , Firefix)</span>
           </p>
          
           <svg
@@ -126,7 +126,8 @@ const Page = () => {
               Upgrade Runtime
             </h1>
             <div className="flex">
-              <p className="p-2 pt-3  bg-blue-800 rounded-l-md text-white max-[620px]:p-1 max-[620px]:text-xs max-[620px]:pt-3">
+
+              <p className="p-2 pt-3  bg-[#d33079] rounded-l-md text-white max-[620px]:p-1 max-[620px]:text-xs max-[620px]:pt-3">
                 Wasm File
               </p>
               <button className="border-2 h-14 w-[500px] border-gray-400 rounded-r-lg text-gray-500 bg-white max-[620px]:w-[95%]">
@@ -141,7 +142,7 @@ const Page = () => {
             <button
               variant="contained"
               href="#"
-              className="ml-2 p-3 pl-8 border-2 pr-8 rounded-lg border-blue-600 text-blue-600 text-lg w-36"
+              className="ml-2 p-3 pl-8 border-2 pr-8 rounded-lg border-[#d33079] text-[#d33079] text-lg w-36"
             >
               Submit
             </button>
