@@ -3,8 +3,8 @@ import Box from "../Box/BasicCard"
 import Table from "../../src/Table/Balance_table"
 import Form from "../Form/Input"
 import MultipleSelect from '../components/DropDown'
-import RowRadioButtonsGroup from '../components/Palette_Buttons'
-
+import RowRadioButtonsGroup from '../components/Pallet_buttons'
+import EventsComponent from '../components/Events'
 const Page = () => {
   return (
     <div>
@@ -66,7 +66,7 @@ const Page = () => {
 
     <MultipleSelect placeholder="Select from available addresses"/>
     <RowRadioButtonsGroup/>
-    
+    <EventsComponent/>
    
     </div>
   )
