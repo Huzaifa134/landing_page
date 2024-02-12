@@ -30,21 +30,21 @@ export default function RowRadioButtonsGroup() {
       <MultipleSelect placeholder="Pallets / RPC"/>
       <MultipleSelect placeholder="Callables"/>
 
-      <div className='flex items-center flex-wrap'>
-      <button variant="contained" href="#" className="ml-2 p-4 pl-10 pr-10 rounded-lg bg-blue-600 text-white text-lg w-36 max-[565px]:p-2 max-[565px]:pl-5 max-[565px]:pr-5">Submit</button>
+      <div className='flex items-center flex-wrap gap-y-5'>
+      <button variant="contained" href="#" className="ml-2  p-3 pl-5 pr-5 rounded-lg bg-blue-600 text-white text-lg w-36 max-[564px]:p-2 max-[565px]:pl-3 max-[565px]:pr-3">Submit</button>
       <p className='m-2'>or</p>
       <button
       variant="contained"
       href="#"
-      className="ml-2 p-3 pl-8 border-2 pr-8 rounded-lg border-blue-600 text-blue-600 text-lg w-36"
+      className="ml-2 p-2 pl-5  border-2 pr-5 rounded-lg border-blue-600 text-blue-600 text-lg w-36"
       >
       Signed
       </button>
-      <p className='m-2'>or</p>
+      <p className='m-2' >or</p>
       <button
       variant="contained"
       href="#"
-      className="ml-2 p-3 pl-8 border-2 pr-8 rounded-lg border-blue-600 text-blue-600 text-lg w-36"
+      className="ml-2 p-2  pl-5 border-2 pr-5 rounded-lg border-blue-600 text-blue-600 text-lg w-36"
       >
       Sudo
       </button>
