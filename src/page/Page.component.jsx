@@ -1,5 +1,7 @@
 import React from 'react'
 import Box from "../Box/BasicCard"
+import Table from "../../src/Table/Balance_table"
+
 const Page = () => {
   return (
     <div>
@@ -52,8 +54,15 @@ const Page = () => {
     </div>
     </div>
     <Box/>
+    <div>
+    <p className=''>Balances</p>
+    </div>
+    <Table/>
+   
     </div>
   )
+{/*Balance Table*/}  
+
 }
 
 export default Page
