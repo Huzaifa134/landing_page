@@ -11,8 +11,8 @@ export default function Input({width,placeholder,bgcolor,active}) {
   return (
     <div
       component="form"
-      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: "30%" }}
-      className={`bg-${bgcolor} flex border-2 rounded border-gray-300 `}
+      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center',  }}
+      className={`bg-${bgcolor} flex border-2 rounded border-gray-300 mb-3 `}
       style={{width:`${width}`}}
     >
     {active?

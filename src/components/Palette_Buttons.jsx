@@ -8,7 +8,7 @@ import MultipleSelect from '../components/DropDown'
 
 export default function RowRadioButtonsGroup() {
   return (
-    
+    <div  className="w-[45%] ml-20 mt-10 flex flex-col justify-center gap-y-4 max-[1268px]:w-[60%] max-[1268px]:m-auto max-[835px]:w-[95%] max-[835px]:ml-0">
     <FormControl>
       <h1 className='mb-8 font-bold text-xl'>Pallet Interactor</h1>
       
@@ -29,5 +29,6 @@ export default function RowRadioButtonsGroup() {
       <MultipleSelect placeholder="Pallets / RPC"/>
       <MultipleSelect placeholder="Callables"/>
     </FormControl>
+    </div>
   );
 }
