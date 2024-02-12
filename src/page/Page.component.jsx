@@ -119,14 +119,14 @@ const Page = () => {
             </div>
           </div>
           <div
-            className="flex w-[630px] flex-col justify-center items-center gap-y-5 max-[1268px]:w-[100%] max-[1268px]:mb-20"
+            className="flex w-[600px] flex-col justify-center items-center gap-y-5 max-[1268px]:w-[100%] max-[1268px]:mb-20"
         
           >
             <h1 className="font-bold text-2xl self-start ml-4">
               Upgrade Runtime
             </h1>
             <div className="flex">
-              <p className="p-4  bg-blue-800 rounded-l-md text-white max-[620px]:p-1 max-[620px]:text-xs max-[620px]:pt-3">
+              <p className="p-2 pt-3  bg-blue-800 rounded-l-md text-white max-[620px]:p-1 max-[620px]:text-xs max-[620px]:pt-3">
                 Wasm File
               </p>
               <button className="border-2 h-14 w-[500px] border-gray-400 rounded-r-lg text-gray-500 bg-white max-[620px]:w-[95%]">
@@ -145,6 +145,10 @@ const Page = () => {
             >
               Submit
             </button>
+            <div className="self-start">
+            
+            <EventsComponent/>
+            </div>
           </div>
           </div>
           </div>
@@ -152,7 +156,7 @@ const Page = () => {
           
           <Submit />
           <Pallet />
-          <EventsComponent/>
+          
           </div>
           </div>
   );
