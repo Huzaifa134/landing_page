@@ -2,8 +2,8 @@ import React from 'react'
 import Box from "../Box/BasicCard"
 import Table from "../../src/Table/Balance_table"
 import Form from "../Form/Input"
-import MultipleSelect from '../components/DropDown'
 
+import Submit from "../components/Submit"
 const Page = () => {
   return (
     <div>
@@ -59,11 +59,12 @@ const Page = () => {
     
     <Table/>
 
-    <Form width={"30%"} placeholder={"1 unit = 10000000000"}/>
-    <Form width={"40%"} placeholder={"Transfer more than the existeencial ammount for account wiht 0 balance"}/>
+    <Form width={"30%"} placeholder={"1 unit = 10000000000"} bgcolor={"transparent"} active={true}/>
+    <Form width={"40%"} placeholder={"Transfer more than the existeencial ammount for account wiht 0 balance"} bgcolor={"transparent"} active={true}/>
 
 
-    <MultipleSelect placeholder="Select from available addresses"/>
+    
+    <Submit/>
     
    
     </div>
