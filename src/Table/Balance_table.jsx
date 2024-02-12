@@ -50,28 +50,28 @@ const rows = [
 export default function CustomizedTables() {
   return (
     <div  style={{ margin:"150px auto "}} className='w-[85.5%] max-[477px]:w-[90%] max-[477px]:ml-4'>
-    <h1 className='mb-8 font-bold text-xl'>Balances</h1>
+    <h1 className='text-[#3f3f3f] mb-8 font-bold text-3xl'>Balances</h1>
     <TableContainer component={Paper} >
-      <Table sx={{ minWidth: 500 }} aria-label="customized table">
+      <Table sx={{ minWidth: 500 }} aria-label="customized table" className='text-[#3f3f3f]'>
         <TableHead>
           <TableRow>
-            <StyledTableCell align="right" className='w-96 font-bold'>Name</StyledTableCell>
-            <StyledTableCell align="left">Address</StyledTableCell>
-            <StyledTableCell align="left">Balance</StyledTableCell>
+            <StyledTableCell align="right" className='text-[#3f3f3f] w-96 font-bold'>Name</StyledTableCell>
+            <StyledTableCell align="left" className='text-[#3f3f3f]' >Address</StyledTableCell>
+            <StyledTableCell align="left" className='text-[#3f3f3f]'>Balance</StyledTableCell>
           </TableRow>
         </TableHead>
       
         <TableBody >
           {rows.map((row) => (
             <StyledTableRow key={row.name}>
-              <StyledTableCell component="th" scope="row" align="right" style={{width:"20%"}} >
+              <StyledTableCell component="th" scope="row" align="right" style={{width:"20%", color:"#555555"}} >
                <p  style={{fontSize:"10px"}}>
               {row.name}
               
               </p>
               </StyledTableCell>
               <StyledTableCell align="left">
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' ,flexWrap:"wrap"}}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' ,flexWrap:"wrap", color:"#555555"}}>
                   <div style={{ flexGrow: 1 }}>
                   <p  style={{fontSize:"10px"}}>
                   {row.address}
@@ -85,7 +85,7 @@ export default function CustomizedTables() {
                 </div>
               </StyledTableCell>
               <StyledTableCell align="left">
-              <p  style={{fontSize:"10px"}}>
+              <p  style={{fontSize:"10px", color:"#555555"}}>
               
               {row.balance}
               

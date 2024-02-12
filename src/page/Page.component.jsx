@@ -24,10 +24,10 @@ const Page = () => {
   return (
     <div>
       <div
-        className="flex   items-center "
+        className="flex w-[100%]  items-center  lg:w-[87%] max-[409px]:w-[100%] "
         style={{
           justifyContent: "space-between",
-          width: "87%",
+          
           margin: "30px auto",
         }}
       >
@@ -71,7 +71,7 @@ const Page = () => {
           </svg>
 
           <div className="flex justify-center items-center gap-x-3 border-2 p-1 rounded-3xl border-gray-300 pl-3 pr-3">
-            <p>Hi, Aaron Coper </p>
+            <p className="text-[#555555] text-xs lg:text-sm">Hi, Aaron Coper </p>
 
             
             <svg
@@ -91,22 +91,23 @@ const Page = () => {
 
       <div className="flex flex-col ">
         <div
-          className="flex flex-wrap items-center"
+          className="flex flex-wrap gap-x-6 items-center"
           style={{ justifyContent: "center", margin: "0 auto" }}
         >
           <div
-            className="flex w-[660px] flex-col gap-y-4 ml-2 max-[1268px]:w-[100%] max-[1268px]:mb-10"
+            className="flex w-[630px]  flex-col gap-y-4 ml-2 max-[1268px]:w-[100%] max-[1268px]:mb-10"
             
           >
-            <h1 className="font-bold text-2xl self-start ">Transfer</h1>
+            <h1 className="text-[#3f3f3f] font-bold text-3xl self-start ">Transfer</h1>
             <Form
               width={"60%"}
               placeholder={"1 unit = 10000000000"}
               bgcolor={"transparent"}
               active={true}
+              className="w-[60%]"
             />
             <Form
-              width={"90%"}
+              width={"70%"}
               placeholder={
                 "Transfer more than the existeencial ammount for account wiht 0 balance"
               }
@@ -115,14 +116,14 @@ const Page = () => {
             />
             <div>
             
-            
+            <Submit />
             </div>
           </div>
           <div
             className="flex w-[600px] flex-col justify-center items-center gap-y-5 max-[1268px]:w-[100%] max-[1268px]:mb-20"
         
           >
-            <h1 className="font-bold text-2xl self-start ml-4">
+            <h1 className="text-[#3f3f3f] font-bold text-3xl self-start ml-4">
               Upgrade Runtime
             </h1>
             <div className="flex">
@@ -153,9 +154,9 @@ const Page = () => {
           </div>
           </div>
           </div>
-          <div  >
+          <div  className="mb-5">
           
-          <Submit />
+          
           <Pallet />
           
           </div>

@@ -17,18 +17,18 @@ const bull = (
 
 export default function BasicCard() {
   return (
-    <div className="flex gap-10 justify-center flex-wrap">
+    <div className="flex gap-10 justify-center flex-wrap sm:w-[100%]">
       <Card sx={{ minWidth: 300 }} style={{ height: "200px" }}>
         <CardContent className="ml-4">
           {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Word of the Day
   </Typography> */}
 
-          <h1 className="font-semibold text-3xl">Parity Palkadot</h1>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          <h1 className="text-[#3f3f3f] font-semibold text-3xl">Parity Palkadot</h1>
+          <Typography sx={{ mb: 1.5 }} className="text-[#555555]">
             Palkadot
           </Typography>
-          <p className="font-medium">
+          <p className="text-[#555555] font-medium">
             wss://rpc.polkadot.io
             <br />
           </p>
@@ -65,8 +65,8 @@ export default function BasicCard() {
         Word of the Day
 </Typography> */}
 
-          <h1 className="font-semibold text-3xl">Meta Data</h1>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          <h1 className="text-[#3f3f3f] font-semibold text-3xl">Meta Data</h1>
+          <Typography sx={{ mb: 1.5 }} className="text-[#555555]">
             v14
           </Typography>
          
@@ -91,8 +91,8 @@ export default function BasicCard() {
       Word of the Day
 </Typography> */}
 
-          <h1 className="font-semibold text-3xl">18,708,895</h1>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          <h1 className="text-[#3f3f3f] font-semibold text-3xl">18,708,895</h1>
+          <Typography sx={{ mb: 1.5 }} className="text-[#555555]">
             Current Block
           </Typography>
           
@@ -129,8 +129,8 @@ export default function BasicCard() {
     Word of the Day
 </Typography> */}
 
-          <h1 className="font-semibold text-3xl">18,708,893</h1>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          <h1 className="text-[#3f3f3f] font-semibold text-3xl">18,708,893</h1>
+          <Typography sx={{ mb: 1.5 }} className="text-[#555555]">
             Finalized Block
           </Typography>
           

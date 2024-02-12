@@ -16,9 +16,9 @@ import Button from '@mui/material/Button';
   };
 
   return (
-    <div  className="w-[45%] ml-28 flex flex-col justify-center gap-y-4 max-[1268px]:w-[60%] max-[1268px]:m-auto max-[835px]:w-[95%] max-[835px]:ml-0">
+    <div  className="w-[95%] gap-x-5 flex flex-col justify-center gap-y-4 max-[1268px]:w-[60%] max-[1268px]:m-auto max-[835px]:w-[95%] max-[835px]:ml-0 max-[495px]:w-[100%]">
       <MultipleSelect placeholder="Select from available addresses" />
-      <div className="flex items-center ml-2">
+      <div className="flex items-center ">
         <p className="p-4 pl-7 pr-7 bg-[#d33079] rounded-l-md text-white">To</p>
         <input
           type="text"
@@ -30,7 +30,7 @@ import Button from '@mui/material/Button';
         />
       </div>
 
-      <div className="flex items-center ml-2">
+      <div className="flex items-center ">
         <p className="p-4  bg-[#d33079] rounded-l-md text-white">Amount</p>
 
         <div style={{ width: "100%" , }} className="border-0 rounded-none">
@@ -59,7 +59,7 @@ import Button from '@mui/material/Button';
           </FormControl>
         </div>
       </div>
-      <button variant="contained" href="#" className="ml-2 p-4 pl-10 pr-10 rounded-lg bg-[#d33079] text-white text-lg w-36">
+      <button variant="contained" href="#" className=" p-4 pl-10 pr-10 rounded-lg bg-[#d33079] text-white text-lg w-36">
   Submit
 </button>
     </div>
