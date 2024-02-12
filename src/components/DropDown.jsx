@@ -14,21 +14,21 @@ export default function SelectLabels({placeholder}) {
 
   return (
     <div>
-      
-      <FormControl sx={{ m: 1, minWidth: 720 }}>
+          
+          <FormControl sx={{ m: 1, minWidth: "100%" }} >
         <Select
           value={age}
           onChange={handleChange}
           displayEmpty
           inputProps={{ 'aria-label': 'Without label' }}
-          className='bg-white'
+          className='bg-white text-gray-400'
         >
           <MenuItem value="">
             <p className='text-gray-400'>{placeholder}</p>
           </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          <MenuItem value={10} className=' text-gray-400'>Ten</MenuItem>
+          <MenuItem value={20} className=' text-gray-400'>Twenty</MenuItem>
+          <MenuItem value={30} className=' text-gray-400'>Thirty</MenuItem>
         </Select>
       </FormControl>
     </div>
