@@ -95,7 +95,7 @@ const Page = () => {
           style={{ justifyContent: "center", margin: "0 auto" }}
         >
           <div
-            className="flex w-[630px] flex-col gap-y-4 ml-2 max-[1268px]:w-[100%] max-[1268px]:mb-10"
+            className="flex w-[660px] flex-col gap-y-4 ml-2 max-[1268px]:w-[100%] max-[1268px]:mb-10"
             
           >
             <h1 className="font-bold text-2xl self-start ">Transfer</h1>
@@ -148,7 +148,7 @@ const Page = () => {
           </div>
           </div>
           </div>
-          <div >
+          <div  >
           
           <Submit />
           <Pallet />

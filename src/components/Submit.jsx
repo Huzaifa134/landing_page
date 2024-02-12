@@ -16,7 +16,7 @@ import Button from '@mui/material/Button';
   };
 
   return (
-    <div  className="w-[45%] ml-20 flex flex-col justify-center gap-y-4 max-[1268px]:w-[60%] max-[1268px]:m-auto max-[835px]:w-[95%] max-[835px]:ml-0">
+    <div  className="w-[45%] ml-28 flex flex-col justify-center gap-y-4 max-[1268px]:w-[60%] max-[1268px]:m-auto max-[835px]:w-[95%] max-[835px]:ml-0">
       <MultipleSelect placeholder="Select from available addresses" />
       <div className="flex items-center ml-2">
         <p className="p-4 pl-7 pr-7 bg-blue-800 rounded-l-md text-white">To</p>
