@@ -1,4 +1,5 @@
 import React from 'react';
+import IconEraserVariant from './Eraser_Icon';
 
 export default function EventsComponent() {
   // Replace this with your actual events data
@@ -21,7 +22,8 @@ export default function EventsComponent() {
   };
 
   return (
-    <div><h1 className='w-[500px] mb-8 font-bold text-xl'>Events</h1>
+    <div><h1 className='w-[500px] flex justify-centera items-center mb-4 font-bold text-3xl'style={{}}>Events<button><IconEraserVariant className='ml-96 mb-0 h-6 w-6'/></button></h1>
+    
     <div className="w-[500px] bg-white overflow-y-auto max-h-60 rounded" style={scrollBarStyle}>
       <ul>
         {events.map((event, index) => (
