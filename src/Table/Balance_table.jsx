@@ -49,7 +49,9 @@ const rows = [
 
 export default function CustomizedTables() {
   return (
-    <TableContainer component={Paper} style={{width:"82.5%", margin:"250px auto"}}>
+    <div  style={{width:"85.5%", margin:"150px auto "}}>
+    <h1 className='mb-8 font-bold text-xl'>Balances</h1>
+    <TableContainer component={Paper} >
       <Table sx={{ minWidth: 500 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -58,15 +60,23 @@ export default function CustomizedTables() {
             <StyledTableCell align="left">Balance</StyledTableCell>
           </TableRow>
         </TableHead>
-        <TableBody>
+      
+        <TableBody >
           {rows.map((row) => (
             <StyledTableRow key={row.name}>
-              <StyledTableCell component="th" scope="row" align="right">
-                {row.name}
+              <StyledTableCell component="th" scope="row" align="right" style={{width:"20%"}} >
+               <p  style={{fontSize:"10px"}}>
+              {row.name}
+              
+              </p>
               </StyledTableCell>
               <StyledTableCell align="left">
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <div style={{ flexGrow: 1 }}>{row.address}</div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' ,flexWrap:"wrap"}}>
+                  <div style={{ flexGrow: 1 }}>
+                  <p  style={{fontSize:"10px"}}>
+                  {row.address}
+                  </p>
+                  </div>
                   <div style={{ width: '50%' }}>
                     <IconButton color="primary" aria-label="contact icon" style={{ marginLeft: '50%' }}>
                       <IconContacts />
@@ -74,11 +84,18 @@ export default function CustomizedTables() {
                   </div>
                 </div>
               </StyledTableCell>
-              <StyledTableCell align="left">{row.balance}</StyledTableCell>
+              <StyledTableCell align="left">
+              <p  style={{fontSize:"10px"}}>
+              
+              {row.balance}
+              
+              </p></StyledTableCell>
             </StyledTableRow>
           ))}
-        </TableBody>
+          </TableBody>
+          
       </Table>
     </TableContainer>
+    </div>
   );
 }

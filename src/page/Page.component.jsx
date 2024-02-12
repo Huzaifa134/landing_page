@@ -1,11 +1,13 @@
 import React from 'react'
 import Box from "../Box/BasicCard"
 import Table from "../../src/Table/Balance_table"
+import Form from "../Form/Input"
+import MultipleSelect from '../components/DropDown'
 
 const Page = () => {
   return (
     <div>
-    <div className='flex gap-x-[570px] justify-center items-center mt-5 mb-10'>
+    <div className='flex   items-center ' style={{justifyContent:"space-between",width:"87%",margin:"30px auto"}}>
     <img src="https://substrate-developer-hub.github.io/substrate-front-end-template/assets/substrate-logo.png" alt="Polkadot" height={30} width={30}/>
     <div className='flex justify-center items-center gap-x-5'>
     <p>create an account with Polkadot-JS Extension <span className='text-cyan-500'>(chrome , Firefix)</span></p>
@@ -54,10 +56,15 @@ const Page = () => {
     </div>
     </div>
     <Box/>
-    <div>
-    <p className=''>Balances</p>
-    </div>
+    
     <Table/>
+
+    <Form width={"30%"} placeholder={"1 unit = 10000000000"}/>
+    <Form width={"40%"} placeholder={"Transfer more than the existeencial ammount for account wiht 0 balance"}/>
+
+
+    <MultipleSelect placeholder="Select from available addresses"/>
+    
    
     </div>
   )
