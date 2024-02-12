@@ -38,7 +38,7 @@ const Page = () => {
           width={30}
         />
         <div className="flex justify-center items-center gap-x-5">
-          <p>
+          <p className="text-[#555555]">
             create an account with Polkadot-JS Extension{" "}
             <span className="text-[#d33079]">(chrome , Firefix)</span>
           </p>

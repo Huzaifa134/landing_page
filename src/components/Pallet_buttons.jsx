@@ -18,7 +18,7 @@ export default function RowRadioButtonsGroup() {
         name="row-radio-buttons-group"
         className='ml-4 flex flex-wrap'
       >
-        <div className='fill-[#d33079] flex justify-center flex-wrap items-center'>
+        <div className=' flex justify-center flex-wrap items-center'>
         <div className='mr-3'>Interaction Type</div>
         <FormControlLabel value="Extrinsic" control={<Radio />} label="Extrinsic" />
         <FormControlLabel value="Query" control={<Radio />} label="Query" />
