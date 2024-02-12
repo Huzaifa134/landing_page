@@ -49,7 +49,7 @@ const rows = [
 
 export default function CustomizedTables() {
   return (
-    <div  style={{ margin:"150px auto "}} className='w-[85.5%] max-[477px]:w-[90%] max-[477px]:ml-4'>
+    <div  style={{ margin:"150px auto "}} className='w-[100%] sm:w-[85.5%] max-[512]:w-[150%] max-[477px]:ml-4'>
     <h1 className='mb-8 font-bold text-xl'>Balances</h1>
     <TableContainer component={Paper} >
       <Table sx={{ minWidth: 500 }} aria-label="customized table">
