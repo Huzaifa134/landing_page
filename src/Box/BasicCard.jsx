@@ -81,7 +81,7 @@ export default function BasicCard() {
             }}
           ></div>
 
-          <button className="bg-blue-600 p-2 text-white rounded-md text-center mt-1 ml-5"   >Show Metadata</button>
+          <button className="bg-[#d33079] p-2 text-white rounded-md text-center mt-1 ml-5"   >Show Metadata</button>
         </div>
       </Card>
 
