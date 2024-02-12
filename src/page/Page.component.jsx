@@ -39,7 +39,7 @@ const Page = () => {
           width={30}
         />
         <div className="flex justify-center items-center gap-x-5">
-          <p className="text-xs lg:text-sm">
+          <p className="text-[#555555]">
             create an account with Polkadot-JS Extension{" "}
             <span className="text-[#d33079]">(chrome , Firefix)</span>
           </p>
@@ -72,7 +72,7 @@ const Page = () => {
           </svg>
 
           <div className="flex justify-center items-center gap-x-3 border-2 p-1 rounded-3xl border-gray-300 pl-3 pr-3">
-            <p className="text-xs lg:text-sm">Hi, Aaron Coper </p>
+            <p className="text-[#555555] text-xs lg:text-sm">Hi, Aaron Coper </p>
 
             
             <svg
@@ -89,9 +89,11 @@ const Page = () => {
       <Box />
 
       <Table />
+
       
 <Transfer/>
       
+
           <div  className="mb-5">
           
           
