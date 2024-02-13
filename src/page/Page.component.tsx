@@ -1,14 +1,13 @@
 import React from "react";
-import Box from "../Box/BasicCard";
-import Table from "../../src/Table/Balance_table";
+import Box from "../Box/BasicCard.tsx";
+import Table from "../Table/Balance_table.tsx";
 import Form from "../Form/Input";
 import Button from "@mui/material/Button";
 import Submit from "../components/Submit";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import { styled } from "@mui/material/styles";
-import Pallet from "../components/Pallet_buttons";
-import Transfer from "../components/Transfer";
-
+import Pallet from "../components/Pallet_buttons.tsx";
+import Transfer from "../components/Transfer.tsx";
 
 const Page = () => {
   const VisuallyHiddenInput = styled("input")({
@@ -28,7 +27,7 @@ const Page = () => {
         className="flex w-[100%]  items-center  lg:w-[87%] max-[409px]:w-[100%] "
         style={{
           justifyContent: "space-between",
-          
+
           margin: "30px auto",
         }}
       >
@@ -43,7 +42,7 @@ const Page = () => {
             create an account with Polkadot-JS Extension{" "}
             <span className="text-[#d33079]">(chrome , Firefox)</span>
           </p>
-         
+
           <svg
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -54,7 +53,6 @@ const Page = () => {
             <path d="M4 8a6 6 0 014.03-5.67 2 2 0 113.95 0A6 6 0 0116 8v6l3 2v1H1v-1l3-2V8zm8 10a2 2 0 11-4 0h4z" />
           </svg>
 
-         
           <svg
             viewBox="0 0 64 64"
             fill="currentColor"
@@ -72,9 +70,10 @@ const Page = () => {
           </svg>
 
           <div className="flex justify-center items-center gap-x-3 border-2 p-1 rounded-3xl border-gray-300 pl-3 pr-3">
-            <p className="text-[#555555] text-xs lg:text-sm">Hi, Aaron Coper </p>
+            <p className="text-[#555555] text-xs lg:text-sm">
+              Hi, Aaron Coper{" "}
+            </p>
 
-            
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -90,20 +89,13 @@ const Page = () => {
 
       <Table />
 
-      
-<Transfer/>
-      
+      <Transfer />
 
-          <div  className="mb-5">
-          
-          
-          <Pallet />
-          
-          </div>
-          </div>
+      <div className="mb-5">
+        <Pallet />
+      </div>
+    </div>
   );
-  
-  
 };
 
 export default Page;

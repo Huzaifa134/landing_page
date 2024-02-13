@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import IconEraserVariant from "./Eraser_Icon";
 
 export default function EventsComponent() {
@@ -39,14 +39,13 @@ export default function EventsComponent() {
     // Add more events here...
   ];
 
-  const scrollBarStyle = {
+  const scrollBarStyle: CSSProperties = {
     scrollbarWidth: "thin",
     scrollbarColor: "rgba(155, 155, 155, 0.7) transparent",
-    scrollbarRadius: "10px",
   };
 
   return (
-    <div className="w-[45%] ml-28 mt-10 flex flex-col justify-center gap-y-4 max-[1268px]:w-[60%] max-[1268px]:m-auto max-[835px]:w-[95%] max-[835px]:ml-0">
+    <div className="w-[45%]  mt-10 flex flex-col justify-center gap-y-4  max-[1268px]:m-auto max-[835px]:ml-0">
       <h1
         className="text-[#3f3f3f] self-start    flex   mb-4 font-bold text-3xl"
         style={{ margin: "0 auto" }}
