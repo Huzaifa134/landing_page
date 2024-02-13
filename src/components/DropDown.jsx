@@ -13,7 +13,7 @@ export default function SelectLabels({placeholder}) {
   };
 
   return (
-    <div className='mb-5'>
+    <div className='mb-5 sm:w-[80%]'>
           
           <FormControl sx={{ m: 0, minWidth: "99%" }} >
         <Select

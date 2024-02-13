@@ -3,41 +3,48 @@ import Form from "../Form/Input";
 import Button from "@mui/material/Button";
 import Submit from "./Submit";
 import EventsComponent from "../components/Events";
+import IconButton from '@mui/material/IconButton';
+import WashOutlinedIcon from '@mui/icons-material/WashOutlined';
 const Transfer = () => {
   return (
-    <div>
-    <div className="flex flex-col ">
+    
+    
         <div
-          className="flex flex-wrap gap-x-6 items-center"
-          style={{ justifyContent: "center", margin: "0 auto" }}
+          className="sm:flex sm:flex-wrap sm:justify-center sm:gap-x-6 sm:items-center "
+          style={{  margin: "0 auto" }}
+          
         >
           <div
-            className="flex  flex-col gap-y-4 ml-2 max-[515px]:w-[100px] max-[1268px]:w-[100%] max-[1268px]:mb-10"
+            className="flex  flex-col gap-y-4 sm:ml-2  sm:w-[40%]"
+            
             
           >
-            <h1 className="font-bold text-2xl self-start ">Transfer</h1>
-            <Form
-              width={"60%"}
-              placeholder={"1 unit = 10000000000"}
-              bgcolor={"transparent"}
-              active={true}
-              className="w-[60%]"
-            />
-            <Form
-              width={"70%"}
-              placeholder={
-                "Transfer more than the existeencial ammount for account wiht 0 balance"
-              }
-              bgcolor={"transparent"}
-              active={true}
-            />
+          
+            <h1 className="font-bold text-2xl self-start  ">Transfer</h1>
+            <div
+            component="form"
+            sx={{ p: '2px 4px', display: 'flex', alignItems: 'center',  }}
+            className={`bg-white flex border-2 rounded border-gray-300 mb-3 w-[50%] sm:w-[40%] `}
+           
+          >
+        
+            <IconButton sx={{ p: '10px' }} aria-label="menu">
+              <WashOutlinedIcon />
+            </IconButton>
+            
+            <input type="text" name="text" id="text"  sx={{ ml: 1, flex: 1 }}
+            placeholder="1 unit = 100000000 "
+            inputProps={{ 'aria-label': 'search google maps' }}
+            style={{backgroundColor:"transparent"}}
+            className='focus:outline-none   sm:w-[90%]'/>
+          </div>
             <div>
             
             <Submit />
             </div>
           </div>
           <div
-            className="flex w-[600px] flex-col justify-center items-center gap-y-5 max-[1268px]:w-[100%] max-[1268px]:mb-20"
+            className="flex flex-col sm:justify-center sm:items-center gap-y-5"
         
           >
             <h1 className="font-bold text-2xl self-start ml-4">
@@ -48,7 +55,7 @@ const Transfer = () => {
               <p className="p-2 pt-3  bg-[#d33079] rounded-l-md text-white max-[620px]:p-1 max-[620px]:text-xs max-[620px]:pt-3">
                 Wasm File
               </p>
-              <button className="border-2 h-14 w-[500px] border-gray-400 rounded-r-lg text-gray-500 bg-white max-[620px]:w-[95%]">
+              <button className="border-2 h-14 w-[50%] sm:w-[500px] border-gray-400 rounded-r-lg text-gray-500 bg-white ">
                 <input
                   type="file"
                   name="file"
@@ -70,10 +77,9 @@ const Transfer = () => {
             </div>
           </div>
           </div>
-          </div>
+          
     
-    </div>
+   
   )
 }
-
 export default Transfer
