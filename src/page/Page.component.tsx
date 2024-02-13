@@ -24,52 +24,55 @@ const Page = () => {
   return (
     <div>
       <div
-        className="flex w-[100%]  items-center  lg:w-[87%] max-[409px]:w-[100%] "
+        className="w-[100%]   lg:w-[87%] max-[409px]:w-[100%] "
         style={{
-          justifyContent: "space-between",
-
+          // justifyContent: "space-between",
           margin: "30px auto",
         }}
       >
-        <img
-          src="https://substrate-developer-hub.github.io/substrate-front-end-template/assets/substrate-logo.png"
-          alt="Polkadot"
-          height={30}
-          width={30}
-        />
-        <div className="flex justify-center items-center gap-x-5">
-          <p className="text-[#555555]">
-            create an account with Polkadot-JS Extension{" "}
-            <span className="text-[#d33079]">(chrome , Firefox)</span>
-          </p>
-
-          <svg
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            height="1em"
-            width="1em"
-            style={{ height: "20px", width: "20px" }}
-          >
-            <path d="M4 8a6 6 0 014.03-5.67 2 2 0 113.95 0A6 6 0 0116 8v6l3 2v1H1v-1l3-2V8zm8 10a2 2 0 11-4 0h4z" />
-          </svg>
-
-          <svg
-            viewBox="0 0 64 64"
-            fill="currentColor"
-            height="1em"
-            width="1em"
-            style={{ height: "30px", width: "30px" }}
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              strokeMiterlimit={10}
-              strokeWidth={2}
-              d="M12 21h40M12 33h40M12 45h40"
+        <div className="flex  flex-wrap justify-center  items-center ">
+          <div className="flex flex-wrap items-center justify-center ">
+            <img
+              src="https://substrate-developer-hub.github.io/substrate-front-end-template/assets/substrate-logo.png"
+              alt="Polkadot"
+              height={30}
+              width={30}
             />
-          </svg>
+            <p className="text-[#555555] text-xs sm:text-sm ">
+              create an account with Polkadot-JS Extension{" "}
+              <span className="text-[#d33079]">(chrome , Firefox)</span>
+            </p>
+          </div>
+          <div className="flex justify-center items-center ">
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              height="1.5em"
+              width="1.5em"
+              // className="sm:h-1 sm:w-1"
+              // style={{ height: "40px", width: "40px" }}
+            >
+              <path d="M4 8a6 6 0 014.03-5.67 2 2 0 113.95 0A6 6 0 0116 8v6l3 2v1H1v-1l3-2V8zm8 10a2 2 0 11-4 0h4z" />
+            </svg>
 
-          <div className="flex justify-center items-center gap-x-3 border-2 p-1 rounded-3xl border-gray-300 pl-3 pr-3">
+            <svg
+              viewBox="0 0 64 64"
+              fill="currentColor"
+              height="2em"
+              width="2em"
+
+              // style={{ height: "50px", width: "50px" }}
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                strokeMiterlimit={10}
+                strokeWidth={2}
+                d="M12 21h40M12 33h40M12 45h40"
+              />
+            </svg>
+          </div>
+          <div className="flex justify-center items-center gap-x-3 border-2 p-1 rounded-3xl border-gray-300 sm:pl-3 sm:pr-3">
             <p className="text-[#555555] text-xs lg:text-sm">
               Hi, Aaron Coper{" "}
             </p>
@@ -91,7 +94,7 @@ const Page = () => {
 
       <Transfer />
 
-      <div className="mb-5">
+      <div className="mb-5 mt-10 sm:mt-0">
         <Pallet />
       </div>
     </div>
