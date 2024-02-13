@@ -41,7 +41,7 @@ const Page = () => {
         <div className="flex justify-center items-center gap-x-5">
           <p className="text-[#555555]">
             create an account with Polkadot-JS Extension{" "}
-            <span className="text-[#d33079]">(chrome , Firefix)</span>
+            <span className="text-[#d33079]">(chrome , Firefox)</span>
           </p>
          
           <svg
